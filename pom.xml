@@ -4,15 +4,15 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.platform-team</groupId>
+    <groupId>ca.johnhorman.maven</groupId>
     <artifactId>aws-maven</artifactId>
     <packaging>jar</packaging>
-    <version>6.0.0</version>
+    <version>6.1.0</version>
     <name>Amazon Web Services S3 Maven Wagon Support</name>
     <description>Standard Maven wagon support for s3:// urls</description>
 
     <properties>
-        <amazonaws.version>1.11.276</amazonaws.version>
+        <amazonaws.version>1.11.959</amazonaws.version>
         <wagon.version>3.0.0</wagon.version>
 
         <slf4j.version>1.7.25</slf4j.version>
@@ -199,12 +199,18 @@
             </plugin>
             -->
         </plugins>
-
+		<extensions>
+			<extension>
+				<groupId>ca.johnhorman.maven</groupId>
+				<artifactId>aws-maven</artifactId>
+				<version>6.1.0</version>
+			</extension>
+		</extensions>
     </build>
 
-    <url>https://github.com/platform-team/aws-maven</url>
+    <url>https://github.com/JohnHorman/aws-maven</url>
 
-    <inceptionYear>2018</inceptionYear>
+    <inceptionYear>2021</inceptionYear>
 
     <licenses>
         <license>
@@ -215,32 +221,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:platform-team/aws-maven.git</connection>
-        <url>https://github.com/platform-team/aws-maven</url>
+        <connection>scm:git:git@github.com:JohnHorman/aws-maven.git</connection>
+        <url>https://github.com/JohnHorman/aws-maven</url>
     </scm>
-
-    <organization>
-        <name>Platform Team</name>
-        <url>https://platform.team</url>
-    </organization>
-
-    <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.org/platform-team/aws-maven</url>
-    </ciManagement>
-
-    <issueManagement>
-        <system>Github</system>
-        <url>https://github.com/platform-team/aws-maven/issues</url>
-    </issueManagement>
-
-    <developers>
-        <developer>
-            <id>moleksyuk</id>
-            <name>Mykhailo Oleksiuk</name>
-            <email>mykhailo.oleksiuk@gmail.com</email>
-        </developer>
-    </developers>
 
     <!-- Publish to Maven Central -->
     <!--
@@ -268,4 +251,17 @@
         </profile>
     </profiles>
     -->
+    
+    <distributionManagement>
+		<repository>
+			<id>maven-repo.johnhorman.ca</id>
+			<name>John Horman Repository</name>
+			<url>s3://maven-repo.johnhorman.ca/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven-repo.johnhorman.ca</id>
+			<name>John Horman Snapshot Repository</name>
+			<url>s3://maven-repo.johnhorman.ca/snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

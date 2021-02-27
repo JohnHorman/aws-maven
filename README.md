@@ -17,6 +17,7 @@ This project is a fork of a [Maven Wagon](https://github.com/spring-projects/aws
 - original repo not maintained for a long time but we updated fork to the latest libs.
 - we fixed some of issues that blocks others and us.
 - no support from maintainers of original repo. 
+- need to update AWS S3 library versions to remove dependency on JAXB library.
 
 
 ## Usage
