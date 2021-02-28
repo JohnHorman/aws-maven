@@ -1,5 +1,4 @@
 # AWS Maven Wagon
-##NOTE: THIS PROJECT IS NOT SUPPORTED ANYMORE!!!
 
 [![GitHub version](https://badge.fury.io/gh/platform-team%2Faws-maven.svg)](http://badge.fury.io/gh/platform-team%2Faws-maven)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -14,9 +13,7 @@ This project is a fork of a [Maven Wagon](https://github.com/spring-projects/aws
 
 
 ## Why this fork?
-- original repo not maintained for a long time but we updated fork to the latest libs.
-- we fixed some of issues that blocks others and us.
-- no support from maintainers of original repo. 
+- source repository marked as no longer supported
 - need to update AWS S3 library versions to remove dependency on JAXB library.
 
 

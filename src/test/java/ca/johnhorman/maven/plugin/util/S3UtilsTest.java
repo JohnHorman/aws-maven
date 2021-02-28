@@ -18,7 +18,6 @@ package ca.johnhorman.maven.plugin.util;
 
 import com.amazonaws.ClientConfiguration;
 
-import ca.johnhorman.maven.plugin.util.S3Utils;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.apache.maven.wagon.proxy.ProxyInfo;

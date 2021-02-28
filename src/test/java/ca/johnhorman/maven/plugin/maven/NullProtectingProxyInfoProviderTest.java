@@ -19,8 +19,6 @@ package ca.johnhorman.maven.plugin.maven;
 import org.apache.maven.wagon.proxy.ProxyInfo;
 import org.junit.Test;
 
-import ca.johnhorman.maven.plugin.maven.NullProtectingProxyInfoProvider;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.nullValue;

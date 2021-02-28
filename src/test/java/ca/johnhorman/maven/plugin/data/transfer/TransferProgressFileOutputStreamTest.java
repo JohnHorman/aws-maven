@@ -20,7 +20,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import ca.johnhorman.maven.plugin.data.transfer.TransferProgressFileOutputStream;
 import ca.johnhorman.maven.plugin.util.IOUtils;
 
 import java.io.File;

@@ -3,8 +3,6 @@ package ca.johnhorman.maven.plugin.aws;
 import org.apache.maven.wagon.authentication.AuthenticationInfo;
 import org.junit.Test;
 
-import ca.johnhorman.maven.plugin.aws.AWSMavenCredentials;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 

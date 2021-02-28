@@ -20,7 +20,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import ca.johnhorman.maven.plugin.data.transfer.TransferProgressFileInputStream;
 import ca.johnhorman.maven.plugin.util.IOUtils;
 
 import java.io.File;
@@ -90,7 +89,7 @@ public class TransferProgressFileInputStreamTest {
     public void readyByteArrayOffsetLength() throws Exception {
         // GIVEN
         byte[] buffer = new byte[BIG_SIZE];
-        int length = this.inputStream.read(buffer, START_POSITION, SIZE);
+        this.inputStream.read(buffer, START_POSITION, SIZE);
 
         byte[] expected = new byte[SIZE];
         System.arraycopy(buffer, START_POSITION, expected, 0, SIZE);

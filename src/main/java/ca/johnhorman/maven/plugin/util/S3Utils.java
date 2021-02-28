@@ -28,8 +28,6 @@ import static org.apache.commons.lang3.StringUtils.isNotBlank;
 import static org.apache.commons.lang3.StringUtils.substringAfter;
 
 public abstract class S3Utils {
-    private static final String KEY_FORMAT = "%s%s";
-
     public static String getBucketName(Repository repository) {
         Objects.requireNonNull(repository, "repository must not be null");
         return repository.getHost();

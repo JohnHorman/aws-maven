@@ -22,8 +22,6 @@ import org.apache.maven.wagon.events.SessionListener;
 import org.junit.Before;
 import org.junit.Test;
 
-import ca.johnhorman.maven.plugin.data.transfer.StandardSessionListenerSupport;
-
 import java.io.IOException;
 
 import static ca.johnhorman.maven.plugin.maven.matchers.Matchers.eq;

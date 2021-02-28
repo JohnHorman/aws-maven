@@ -28,7 +28,6 @@ import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
 
-import ca.johnhorman.maven.plugin.AmazonS3Wagon;
 import ca.johnhorman.maven.plugin.data.TransferProgress;
 
 import org.apache.maven.wagon.ResourceDoesNotExistException;

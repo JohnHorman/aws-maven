@@ -35,8 +35,6 @@ import org.junit.Test;
 import ca.johnhorman.maven.plugin.data.SessionListenerSupport;
 import ca.johnhorman.maven.plugin.data.TransferListenerSupport;
 import ca.johnhorman.maven.plugin.data.TransferProgress;
-import ca.johnhorman.maven.plugin.maven.AbstractWagon;
-import ca.johnhorman.maven.plugin.maven.NullProtectingProxyInfoProvider;
 
 import java.io.File;
 import java.io.IOException;
@@ -547,7 +545,6 @@ public class AbstractWagonTest {
         assertEquals(Integer.MAX_VALUE, this.wagon.getTimeout());
     }
 
-    @SuppressWarnings("unused")
     @Test
     public void simpleConstructor() {
         new StubWagon(true);

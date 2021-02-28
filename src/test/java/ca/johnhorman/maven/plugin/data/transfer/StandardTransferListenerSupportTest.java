@@ -25,7 +25,6 @@ import org.junit.Test;
 import org.mockito.ArgumentMatchers;
 
 import ca.johnhorman.maven.plugin.data.TransferListenerSupport;
-import ca.johnhorman.maven.plugin.data.transfer.StandardTransferListenerSupport;
 
 import java.io.IOException;
 

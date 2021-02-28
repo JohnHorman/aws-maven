@@ -21,7 +21,6 @@ import org.apache.maven.wagon.resource.Resource;
 import org.junit.Test;
 
 import ca.johnhorman.maven.plugin.data.TransferListenerSupport;
-import ca.johnhorman.maven.plugin.data.transfer.StandardTransferProgress;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;

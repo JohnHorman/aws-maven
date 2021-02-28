@@ -2,8 +2,6 @@ package ca.johnhorman.maven.plugin.util;
 
 import org.junit.Test;
 
-import ca.johnhorman.maven.plugin.util.IOUtils;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.Closeable;

@@ -2,8 +2,6 @@ package ca.johnhorman.maven.plugin.aws;
 
 import com.amazonaws.auth.AWSCredentials;
 
-import ca.johnhorman.maven.plugin.aws.AWSMavenCredentialsProvider;
-
 import org.apache.maven.wagon.authentication.AuthenticationInfo;
 import org.junit.Test;
 
