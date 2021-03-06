@@ -1,0 +1,14 @@
+<settings>
+	<servers>
+		<server>
+			<id>maven-repo.johnhorman.ca</id>
+			<username>${PRIVATE_MAVEN_REPO_KEYID}</username>
+			<password>${PRIVATE_MAVEN_REPO_SECRET}</password>
+		</server>
+		<server>
+			<id>ossrh</id>
+			<username>${PRIVATE_OSSRH_USER_NAME}</username>
+			<password>${PRIVATE_OSSRH_PASS_WORD}</password>
+		</server>
+	</servers>
+</settings>
