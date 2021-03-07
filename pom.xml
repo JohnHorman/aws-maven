@@ -6,7 +6,7 @@
 	<groupId>ca.johnhorman.maven</groupId>
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
-	<version>6.2.0-SNAPSHOT</version>
+	<version>6.1.0-SNAPSHOT</version>
 	<name>Amazon Web Services S3 Maven Wagon Support</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
@@ -18,7 +18,7 @@
 		<logback.version>1.2.3</logback.version>
 
 		<junit.version>4.12</junit.version>
-		<mockito.version>2.15.0</mockito.version>
+		<mockito.version>3.8.0</mockito.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -131,6 +131,7 @@
 				<configuration>
 					<show>public</show>
 					<docencoding>utf-8</docencoding>
+					<detectJavaApiLink>false</detectJavaApiLink>
 				</configuration>
 				<executions>
 					<execution>
@@ -182,7 +183,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.0</version>
+				<version>0.8.6</version>
 				<executions>
 					<execution>
 						<id>prepare-agent</id>
@@ -220,13 +221,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<extensions>
-			<extension>
-				<groupId>ca.johnhorman.maven</groupId>
-				<artifactId>aws-maven</artifactId>
-				<version>6.2.0-SNAPSHOT</version>
-			</extension>
-		</extensions>
+
 	</build>
 
 	<url>https://github.com/JohnHorman/aws-maven</url>
